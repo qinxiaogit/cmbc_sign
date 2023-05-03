@@ -25,7 +25,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "HOwlet\\CmbcSign\\ServiceProvider"
+                "Owlet\\CmbcSign\\ServiceProvider"
             ],
             "aliases": {
                 "CmbcRequest": "Owlet\\CmbcSign\\Facade"
