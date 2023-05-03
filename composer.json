@@ -1,0 +1,35 @@
+{
+    "name": "owlet/cmbc_sign",
+    "description": "招商银行 sm签名算法api封装",
+    "keywords": ["laravel", "cmbc","sign"],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "lpilp/guomi": "^1.0.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Owlet\\CmbcSign\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "owlet",
+            "email": "qinxiaolove@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "mockery/mockery": "^1.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HOwlet\\CmbcSign\\ServiceProvider"
+            ],
+            "aliases": {
+                "CmbcRequest": "Owlet\\CmbcSign\\Facade"
+            }
+        }
+    }
+}
